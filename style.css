@@ -1,0 +1,35 @@
+body{
+    background: #030303;
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    background: #262626 -webkit-gradient(linear,left top,right top,from(#262626),
+    to(#262626), color-stop(0.5,#fff)) 0 0 no-repeat;
+    background-size: 150px;
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: text;
+    animation: animate 5s infinite;
+    font-size: 165px;
+    font-family: bignoodletitling;
+}
+
+@keyframes animate {
+    0%,10%{
+        background-position: -1000px;
+    }
+    20%{
+        background-position: top left;
+    }
+    90%{
+        background-position: top right;
+    }
+    100%{
+        background-position: 1000px;
+
+    }
+}
